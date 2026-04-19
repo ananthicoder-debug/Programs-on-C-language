@@ -92,11 +92,11 @@ int main()
         while(ch>3);
         return 0;
 }
-ex5m:ex5mimp.o ex5mapp.o
-        cc ex5mimp.o ex5mapp.o -o ex5m
-ex5mimp.o:ex5mimp.c ex5mhead.h
-        cc -c ex5mimp.c
-ex5mapp.o:ex5mapp.c ex5mhead.h
-        cc -c ex5mapp.c
-}
-//app
+//make
+mul:imp.o app.o
+        cc imp.o app.o -o mul
+imp.o:imp.c head.h
+        cc-c mulimp.c
+app.o:app.c head.h
+        cc -c app.c
+
