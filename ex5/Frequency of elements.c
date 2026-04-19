@@ -1,11 +1,6 @@
 //head
 #include<stdio.h>
-void displayArray(int[],int);
-void insertElement(int[],int,int,int);
-void deleteLastElement(int[],int);
-void searchByIndex(int[],int,int);
-void updateByValue(int[],int,int,int);
-void sortArray(int[],int);
+void frequency(int,int[]);
 //imp
 #include"feqhead.h"
 void frequency(int s,int a[]){
