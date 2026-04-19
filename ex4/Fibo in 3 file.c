@@ -27,3 +27,10 @@ int main()
    printf("The %dth term of fibbonacci series is %d",n,f);
    return 0;
 }
+//make
+mul:imp.o app.o
+        cc imp.o app.o -o mul
+imp.o:imp.c head.h
+        cc-c mulimp.c
+app.o:app.c head.h
+        cc -c app.c
