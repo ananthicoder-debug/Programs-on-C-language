@@ -123,3 +123,9 @@ int main(){
    return 0;
 }
 //make
+tv :imp.o app.o
+        cc imp.o app.o -o tv
+imp.o :imp.c head.h
+        cc -c ex8imp.c
+app.o :app.c head.h
+        cc -c ex8app.c
